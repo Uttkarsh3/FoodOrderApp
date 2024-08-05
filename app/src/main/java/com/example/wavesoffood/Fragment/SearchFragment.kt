@@ -47,6 +47,7 @@ class SearchFragment : Fragment() {
             originalMenuItemPrice as MutableList<String>, originalMenuImage as MutableList<Int>
         )
         binding.menuRecyclerView.layoutManager=LinearLayoutManager(requireContext())
+        binding.menuRecyclerView.adapter=adapter
         return binding.root
     }
 
