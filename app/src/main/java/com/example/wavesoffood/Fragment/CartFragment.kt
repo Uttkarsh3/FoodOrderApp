@@ -30,7 +30,7 @@ class CartFragment : Fragment() {
         val cartImage= listOf(
             R.drawable.th,
             R.drawable.th2,
-            R.drawable.th4
+            R.drawable.th
         )
         val adapter= CartAdapter(ArrayList(cartFoodName),ArrayList(cartItemPrice),ArrayList(cartImage))
         binding.cartrecyclerview.layoutManager=LinearLayoutManager(requireContext())
