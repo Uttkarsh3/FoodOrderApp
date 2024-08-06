@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".Fragment.HistoryFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -19,6 +18,7 @@
             android:layout_marginTop="16dp"
             android:fontFamily="@font/yeonsung_regular"
             android:text="Recent Buy"
+            android:textSize="16sp"
             android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -40,7 +40,7 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/imageView5"
+                    android:id="@+id/buyAgainFoodImage"
                     android:layout_width="62dp"
                     android:layout_height="62dp"
                     android:layout_marginLeft="8dp"
@@ -52,29 +52,32 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/textView20"
+                    android:id="@+id/buyAgainFoodName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:fontFamily="@font/yeonsung_regular"
                     android:text="Food Name"
+                    android:textSize="16sp"
                     android:textColor="@color/black"
-                    app:layout_constraintBottom_toTopOf="@+id/textView21"
-                    app:layout_constraintStart_toEndOf="@+id/imageView5"
+                    app:layout_constraintBottom_toTopOf="@+id/buyAgainFoodPrice"
+                    app:layout_constraintStart_toEndOf="@+id/buyAgainFoodImage"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/textView21"
+                    android:id="@+id/buyAgainFoodPrice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/yeonsung_regular"
                     android:text="$5"
+                    android:textSize="16sp"
                     android:textColor="@color/textColor"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="@+id/textView20"
-                    app:layout_constraintTop_toBottomOf="@+id/textView20" />
+                    app:layout_constraintStart_toStartOf="@+id/buyAgainFoodName"
+                    app:layout_constraintTop_toBottomOf="@+id/buyAgainFoodName" />
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/OrderStatus"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginEnd="32dp"
@@ -95,18 +98,23 @@
             android:layout_marginTop="16dp"
             android:fontFamily="@font/yeonsung_regular"
             android:text="Recent Buy"
+            android:textSize="16sp"
             android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardView2" />
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/BuyAgainRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginTop="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+            app:layout_constraintTop_toBottomOf="@+id/textView22"
+            app:layout_constraintVertical_bias="1.0"
+            tools:listitem="@layout/buy_again_item" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
