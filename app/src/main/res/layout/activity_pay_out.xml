@@ -61,7 +61,7 @@
                 android:padding="8dp"
                 android:text="Name"
                 android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textSize="14sp" />
 
             <EditText
                 android:layout_width="wrap_content"
@@ -95,7 +95,7 @@
                 android:padding="8dp"
                 android:text="Address"
                 android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textSize="14sp" />
 
             <EditText
                 android:layout_width="wrap_content"
@@ -131,7 +131,7 @@
                 android:padding="8dp"
                 android:text="Payment Method"
                 android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textSize="14sp" />
 
             <ImageView
                 android:id="@+id/imageView5"
@@ -163,33 +163,34 @@
                 android:padding="8dp"
                 android:text="Total Amount"
                 android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textSize="14sp" />
 
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
-                android:ems="10"
-                android:fontFamily="@font/latoregular"
+                android:ems="8"
+                android:fontFamily="@font/yeonsung_regular"
                 android:gravity="end"
-                android:inputType="text"
+                android:inputType="none"
                 android:paddingEnd="32dp"
-                android:text="none"
+                android:text="$5"
                 android:textColor="@color/textColor"
                 android:textSize="20sp" />
         </LinearLayout>
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/placeMyOrder"
         android:layout_width="match_parent"
         android:layout_height="56dp"
+        android:layout_gravity="bottom"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="32dp"
         android:background="@drawable/edittext"
         android:fontFamily="@font/yeonsung_regular"
-        android:layout_gravity="bottom"
         android:text="Place My Order"
         android:textAllCaps="false"
         android:textColor="@color/textColor" />
