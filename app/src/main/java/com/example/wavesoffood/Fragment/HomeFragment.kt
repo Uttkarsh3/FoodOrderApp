@@ -62,7 +62,7 @@ private lateinit var binding: FragmentHomeBinding
         val price = listOf("$5","$7","$8","$10")
         val popularFoodImages=
             listOf(R.drawable.th1,R.drawable.th2,R.drawable.th,R.drawable.th)
-        val adapter=PopularAdapter(foodName,price,popularFoodImages)
+        val adapter=PopularAdapter(foodName,price,popularFoodImages,requireContext())
         binding.PopularRecyclerView.layoutManager=LinearLayoutManager(requireContext())
         binding.PopularRecyclerView.adapter=adapter
     }
