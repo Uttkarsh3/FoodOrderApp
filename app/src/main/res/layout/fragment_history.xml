@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/white"
     android:layout_height="match_parent"
     tools:context=".Fragment.HistoryFragment">
 
@@ -113,7 +114,6 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView22"
-            app:layout_constraintVertical_bias="1.0"
             tools:listitem="@layout/buy_again_item" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
