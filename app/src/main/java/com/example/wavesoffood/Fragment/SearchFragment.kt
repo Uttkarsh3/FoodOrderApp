@@ -18,18 +18,33 @@ import com.example.wavesoffood.databinding.FragmentSearchBinding
 class SearchFragment : Fragment() {
     private lateinit var binding:FragmentSearchBinding
     private lateinit var adapter:MenuAdapter
-    private val originalMenuFoodName=listOf("Burger","Sandwich","Momo","Burger","Sandwich","Momo","Burger","Sandwich","Momo")
-    private val originalMenuItemPrice= listOf("$5","$7","$10","$5","$7","$10","$5","$7","$10")
+    private val originalMenuFoodName = listOf(
+        "Burger", "Sandwich", "Momo", "Pizza", "Pasta", "Salad",
+        "Taco", "Sushi", "Steak", "Fries", "Wrap", "Hot Dog",
+        "Panini", "Dumplings", "Ice Cream"
+    )
+
+    private val originalMenuItemPrice = listOf(
+        "$5", "$7", "$10", "$12", "$8", "$6",
+        "$9", "$15", "$20", "$3", "$6", "$4",
+        "$7", "$11", "$5"
+    )
     private val originalMenuImage= listOf(
         R.drawable.th,
+        R.drawable.th1,
         R.drawable.th2,
-        R.drawable.th,
-        R.drawable.th,
-        R.drawable.th2,
-        R.drawable.th,
-        R.drawable.th,
-        R.drawable.th2,
-        R.drawable.th
+        R.drawable.th3,
+        R.drawable.th4,
+        R.drawable.th5,
+        R.drawable.th6,
+        R.drawable.th7,
+        R.drawable.th8,
+        R.drawable.th9,
+        R.drawable.th10,
+        R.drawable.th11,
+        R.drawable.th12,
+        R.drawable.th13,
+        R.drawable.th14
     )
     // TODO: Rename and change types of parameters
 

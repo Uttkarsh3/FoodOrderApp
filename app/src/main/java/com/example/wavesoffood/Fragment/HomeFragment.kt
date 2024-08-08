@@ -58,10 +58,10 @@ private lateinit var binding: FragmentHomeBinding
                 Toast.makeText(requireContext(),itemMessage,Toast.LENGTH_SHORT).show()
             }
         })
-        val foodName= listOf("Pizza","Golgappe","Bibambap","Momo")
-        val price = listOf("$5","$7","$8","$10")
+        val foodName= listOf("Hot Dog", "Panini", "Dumplings", "Ice Cream")
+        val price = listOf("$4", "$7", "$11", "$5")
         val popularFoodImages=
-            listOf(R.drawable.th1,R.drawable.th2,R.drawable.th,R.drawable.th)
+            listOf(R.drawable.th11, R.drawable.th12, R.drawable.th13, R.drawable.th14)
         val adapter=PopularAdapter(foodName,price,popularFoodImages,requireContext())
         binding.PopularRecyclerView.layoutManager=LinearLayoutManager(requireContext())
         binding.PopularRecyclerView.adapter=adapter
