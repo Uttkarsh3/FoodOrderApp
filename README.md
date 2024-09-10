@@ -14,7 +14,6 @@
 (screenshots/cart_screen.png)
 (screenshots/order_details_screen.png)
 
-*Note: Make sure you upload the screenshots to a `screenshots` folder in your repository.*
 
 ## **Prerequisites**
 To run the app, ensure you have the following installed:
