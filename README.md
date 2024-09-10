@@ -10,7 +10,7 @@
 - **Responsive and intuitive user interface**
 
 ## **Screenshots**
-(screenshots/1.jpeg)
+(screenshots/1.JPG)
 (screenshots/cart_screen.png)
 (screenshots/order_details_screen.png)
 
